@@ -6,6 +6,7 @@ const assertEqual = function(actual, expected) {
   }
 };
 
+
 const head = arr => {
   if (arr.length === 0) {
     return undefined;
