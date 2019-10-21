@@ -23,4 +23,5 @@ const countLetters = str => {
   return output;
 };
 
-console.log(countLetters("Lighthouse labs"));
+// console.log(countLetters("Lighthouse labs"));
+module.exports = countLetters;

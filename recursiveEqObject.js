@@ -17,7 +17,7 @@ const eqArrays = (arr1, arr2) => {
 
 // Returns true if both objects have identical keys with identical values.
 // Otherwise you get back a big fat false!
-const eqObjects = function(object1, object2) {
+const recursiveEqObjects = function(object1, object2) {
   const key1 = Object.keys(object1);
   const key2 = Object.keys(object2);
   if (key1.length !== key2.length) {
@@ -45,10 +45,11 @@ const eqObjects = function(object1, object2) {
   }
 };
 
-//Tests
-console.log(eqObjects({ a: { z: 1 }, b: 2 }, { a: { z: 1 }, b: 2 })); // => true
+module.exports = recursiveEqObjects;
+// //Tests
+// console.log(eqObjects({ a: { z: 1 }, b: 2 }, { a: { z: 1 }, b: 2 })); // => true
 
-console.log(eqObjects({ a: { y: 0, z: 1 }, b: 2 }, { a: { z: 1 }, b: 2 })); // => false
-console.log(eqObjects({ a: { y: 0, z: 1 }, b: 2 }, { a: 1, b: 2 })); // => false
+// console.log(eqObjects({ a: { y: 0, z: 1 }, b: 2 }, { a: { z: 1 }, b: 2 })); // => false
+// console.log(eqObjects({ a: { y: 0, z: 1 }, b: 2 }, { a: 1, b: 2 })); // => false
 
 // assertEqual(cd, cd2);
