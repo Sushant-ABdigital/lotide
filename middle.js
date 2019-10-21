@@ -14,7 +14,7 @@
 //   }
 // };
 // const eqArrays = require('./eqArrays');
-const assertArraysEqual = require('./assertArraysEqual');
+// const assertArraysEqual = require("./assertArraysEqual");
 
 //Middle function to get the middle value from an array.
 const middle = arr => {
